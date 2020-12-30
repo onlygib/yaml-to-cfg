@@ -13,7 +13,7 @@ I want to create a cfg file for accountentryservice using the latest yaml file i
 
 To do this, in the repo root I run:
 ```
-# Args are from above. First arg is yaml path, second arg is cfg path; source, target.
+# Args are from above. First arg is yaml path, second arg is cfg path
 python3 . \
   <path-redacted>/code/edu/gcp-infrastructure-templates/apps/accountentryservice/staging/patch-deployment.yaml \
   <path-redacted>/code/edu/accountmanagementservice/env/cfg/beta1.cfg
