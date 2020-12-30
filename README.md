@@ -4,7 +4,7 @@ Takes a yaml file in, puts a cfg file out. Useful when you need to create a cfg 
 ### How
 1. Clone this repo
 2. In repo root, install deps: `pip3 install -r requirements.txt`
-3. Run the utility on the repo root: `python3 . [yaml-path] [target-path]`
+3. Run the utility at the repo root: `python3 . [yaml-path] [target-path]`
 
 ### Example
 I want to create a cfg file for accountentryservice using the latest yaml file in gcp-infrastructure-templates.
