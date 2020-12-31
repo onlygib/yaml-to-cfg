@@ -31,10 +31,15 @@ for x in blocks:
     if x.get('op') == 'add':
         name = x['value']['name']
         value = x['value']['value']
+
         try:
             value = json.loads(value)
         except:
             pass
+
+        if isinstance(value, str):
+            value = '"' + value + '"'
+
         print(f'{name}={value}', file=target_file)
 
 source_file.close()
