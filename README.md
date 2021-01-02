@@ -8,15 +8,15 @@ Takes a yaml file in, puts a cfg file out. Useful when you need to create a cfg 
 
 ### Example
 I want to create a cfg file for accountentryservice using the latest yaml file in gcp-infrastructure-templates.
-- yaml path: `<path-redacted>/code/edu/gcp-infrastructure-templates/apps/accountentryservice/staging/patch-deployment.yaml`
-- cfg path:  `<path-redacted>/code/edu/accountmanagementservice/env/cfg/beta1.cfg`
+- yaml path: `~/code/edu/gcp-infrastructure-templates/apps/accountentryservice/staging/patch-deployment.yaml`
+- cfg path:  `~/code/edu/accountentryservice/env/cfg/beta1.cfg`
 
 To do this, in the repo root I run:
 ```
 # Args are from above. First arg is yaml path, second arg is cfg path
 python3 . \
-  <path-redacted>/code/edu/gcp-infrastructure-templates/apps/accountentryservice/staging/patch-deployment.yaml \
-  <path-redacted>/code/edu/accountmanagementservice/env/cfg/beta1.cfg
+  ~/code/edu/gcp-infrastructure-templates/apps/accountentryservice/staging/patch-deployment.yaml \
+  ~/code/edu/accountentryservice/env/cfg/beta1.cfg
 ```
 
 ### Warnings and considerations
@@ -27,6 +27,6 @@ python3 . \
 In your .bashrc, add the following, changing the python3 binary name (if necessary) and path to the repo-root to match your system.
 ```
 yaml-to-cfg() {
-    python3 <redacted-path>/code/tools/python/yaml-to-cfg "$@"
+    python3 ~/code/tools/python/yaml-to-cfg "$@"
 }
 ```
