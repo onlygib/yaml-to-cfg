@@ -3,7 +3,7 @@ Takes a yaml file in, puts a cfg file out. Useful when you need to create a cfg 
 
 ### How
 1. Clone this repo
-2. In repo root, install deps: `pip3 install -r requirements.txt`
+2. In repo root, install deps: `pip3 install --user -r requirements.txt`
 3. Run the utility at the repo root: `python3 . [yaml-path] [target-path]`
 
 ### Example
