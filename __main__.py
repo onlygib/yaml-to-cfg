@@ -28,7 +28,7 @@ except IOError:
 
 blocks = yaml.load(source_file, Loader=yaml.FullLoader)
 for x in blocks:
-    if x.get('op') == 'add':
+    if x.get('op') == 'add' and x.get('path') == '/spec/template/spec/containers/0/env/-':
         name = x['value']['name']
         value = x['value']['value']
 
